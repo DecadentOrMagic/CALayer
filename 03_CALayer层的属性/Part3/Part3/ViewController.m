@@ -39,14 +39,14 @@
      */
     
     // 默认锚点
-//    [self defaultAnchorPoint];
+    [self defaultAnchorPoint];
     // 锚点为(0,0)点
 //    [self anchorPointAt00];
     // 锚点为(1,1)点
 //    [self anchorPointAt11];
     
     // 隐式动画
-    [self yinshidonghua];
+//    [self yinshidonghua];
 }
 
 
@@ -168,9 +168,10 @@
 #pragma mark - 关闭隐式动画
 - (void)closeYinshidonghua
 {
-    // layer隐式动画实际上是自动执行了CATransaction，通过begin和commit进行入栈和出栈，并再run loop中执行一次0.25秒的隐式动画。
+    // layer隐式动画实际上是自动执行了CATransaction，通过begin和commit进行入栈和出栈，并在run loop中执行一次0.25秒的隐式动画。
     [CATransaction begin];
     [CATransaction setDisableActions:YES];
+    [CATransaction setAnimationDuration:2.0];// 修改隐式动画的执行时间，从默认的0.25秒修改为1秒
     
     // 隐式动画
     self.layer.bounds = CGRectMake(0, 0, 200, 60);

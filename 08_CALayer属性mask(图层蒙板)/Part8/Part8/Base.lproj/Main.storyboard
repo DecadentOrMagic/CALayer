@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Gqg-nO-pUP">
+                                <rect key="frame" x="0.0" y="30" width="375" height="217"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pull_refresh_arrow.png" translatesAutoresizingMaskIntoConstraints="NO" id="CKP-xl-r9e">
+                                <rect key="frame" x="172" y="384" width="30" height="30"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pull_refresh_arrow_highlight.png" translatesAutoresizingMaskIntoConstraints="NO" id="qJE-8g-y8z">
+                                <rect key="frame" x="172" y="384" width="30" height="30"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Gqg-nO-pUP" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="10" id="KT8-UY-dq0"/>
+                            <constraint firstAttribute="trailing" secondItem="Gqg-nO-pUP" secondAttribute="trailing" id="gQE-Ut-5RC"/>
+                            <constraint firstItem="Gqg-nO-pUP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="iHu-QK-3zb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Gqg-nO-pUP" secondAttribute="bottom" constant="420" id="rMO-xw-B9w"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="grayHead" destination="CKP-xl-r9e" id="rvO-kl-Zyb"/>
+                        <outlet property="greenHead" destination="qJE-8g-y8z" id="fAm-CE-L2F"/>
+                        <outlet property="imageview" destination="Gqg-nO-pUP" id="mvK-yA-bmJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="300.5" y="-39.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2.png" width="400" height="250"/>
+        <image name="pull_refresh_arrow.png" width="30" height="30"/>
+        <image name="pull_refresh_arrow_highlight.png" width="30" height="30"/>
+    </resources>
+</document>

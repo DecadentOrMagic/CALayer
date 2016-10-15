@@ -11,7 +11,6 @@
 @interface ViewController ()
 @property (weak, nonatomic) IBOutlet UIView      *customView;
 @property (weak, nonatomic) IBOutlet UIImageView *iconView;
-
 @end
 
 @implementation ViewController
@@ -53,7 +52,7 @@
 //    [self setShadow];
     
     // 以上代码完整演示
-    [self completeDemo];
+//    [self completeDemo];
     
     // 只要是继承自 UIView 的都有layer属性
     [self configImageView];

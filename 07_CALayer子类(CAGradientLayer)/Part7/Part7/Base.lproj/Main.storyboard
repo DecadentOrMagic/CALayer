@@ -17,28 +17,29 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="CpK-AH-ffk">
-                                <rect key="frame" x="137" y="89" width="100" height="100"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cfW-iD-TuQ">
+                                <rect key="frame" x="67" y="213.5" width="240" height="240"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="ROG-UK-zEC"/>
+                                    <constraint firstAttribute="height" constant="240" id="uLe-oq-gpn"/>
+                                </constraints>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="why so serious_355*355.png" translatesAutoresizingMaskIntoConstraints="NO" id="xZS-XQ-RGN">
-                                <rect key="frame" x="137" y="264" width="100" height="100"/>
-                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" red="0.33725490200000002" green="0.6705882353" blue="0.89411764709999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="cfW-iD-TuQ" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="HPm-Nu-Vdf"/>
+                            <constraint firstItem="cfW-iD-TuQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="kBa-kq-wQx"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
-                        <outlet property="customView" destination="CpK-AH-ffk" id="IaS-qU-SNj"/>
-                        <outlet property="iconView" destination="xZS-XQ-RGN" id="yRZ-b8-tY9"/>
+                        <outlet property="containerView" destination="cfW-iD-TuQ" id="evh-sM-Rbj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="308.5" y="375.5"/>
+            <point key="canvasLocation" x="402.5" y="374.5"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="why so serious_355*355.png" width="355" height="355"/>
-    </resources>
 </document>
